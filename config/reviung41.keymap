@@ -30,25 +30,25 @@
    &lt 4 ESC               &kp Q   &kp W   &kp E   &kp R   &kp T           &kp Y   &kp U   &kp I       &kp O      &kp P      &kp BSLH
    &mt &caps_word LSHFT    &kp A   &kp S   &kp D   &kp F   &kp G           &kp H   &kp J   &kp K       &kp L      &kp SEMI   &mt RSHFT SQT
    &kp LCTRL               &kp Z   &kp X   &kp C   &kp V   &kp B           &kp N   &kp M   &kp COMMA   &kp DOT    &kp FSLH   &lt 4 &sl 4
-                             &kp GUI    &lt SPACE 1    &kp RET    &lt BSPC 2    &sk RALT
+                                        &kp GUI    &lt SPACE 1    &kp RET    &lt BSPC 2    &sk RALT
                         >;
                 };
 
                 lower_layer {
                         bindings = <
-   &kp GRAVE    &kp C_PREV   &kp PGUP    &kp UP         &kp PGDN &C_VOL_UP        &kp PLUS  &kp N7  &kp N8  &kp N9  &kp ASTRK    &trans
-   &kp EQUAL    &kp C_PP     &kp LFT     &kp DWN        &kp RGT  &C_VOL_DN        &kp MINUS &kp N4  &kp N5  &kp N6  &kp DOT      &trans
-   &kp UNDER    &kp C_NEXT   &kp HOME    &kp K_CMENU    &kp END  &C_MUTE          &kp N0    &kp N1  &kp N2  &kp N3  &kp FSLH     &trans
+   &kp GRAVE    &kp C_PREV   &kp PGUP    &kp UP         &kp PGDN &kp C_VOL_UP     &kp PLUS  &kp N7  &kp N8  &kp N9  &kp ASTRK    &trans
+   &kp EQUAL    &kp C_PP     &kp LFT     &kp DWN        &kp RGT  &kp C_VOL_DN     &kp MINUS &kp N4  &kp N5  &kp N6  &kp DOT      &trans
+   &kp UNDER    &kp C_NEXT   &kp HOME    &kp K_CMENU    &kp END  &kp C_MUTE       &kp N0    &kp N1  &kp N2  &kp N3  &kp FSLH     &trans
                                                 &trans      &trans      &to 3        &mo 3       &trans
                         >;
                 };
 
                 raise_layer {
                         bindings = <
-   &TILDE &LBRC     &AMPS   &PIPE   &RBRC    &none              &none             &mkp MB4          &mmv MOVE_UP      &mkp MB5           &none   &trans
-   &trans &LPAR     &EXCL   &AT     &RPAR    &DLLR              &msc SCRL_UP      &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT    &none   &trans
-   &trans &LBKT     &PRCNT  &CARET  &RBKT    &HASH              &msc SCRL_DOWN    &LCLK             &MCLK     &RCLK     &none   &trans
-                              &trans      &mo 3       &to 3        &trans      &trans
+   &kp TILDE    &kp LBRC     &kp AMPS   &kp PIPE   &kp RBRC    &none                 &none              &mkp MB4          &mmv MOVE_UP      &mkp MB5            &none   &trans
+   &trans       &kp LPAR     &kp EXCL   &kp AT     &kp RPAR    &kp DLLR              &msc SCRL_UP       &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT     &none   &trans
+   &trans       &kp LBKT     &kp PRCNT  &kp CARET  &kp RBKT    &kp HASH              &msc SCRL_DOWN     &mkp LCLK         &mkp MCLK         &mkp RCLK           &none   &trans
+                                                    &trans      &mo 3       &to 3        &trans      &trans
                         >;
                 };
 
@@ -57,7 +57,7 @@
                         bindings = <
    &to 1    &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &rgb_ug RGB_TOG    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
    &none    &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none              &none        &none        &none        &none        &none        &none
-   &none           &none           &none           &none           &none &none              &sys_reset       &none        &none        &none        &none        &none
+   &none    &none           &none           &none           &none           &none              &sys_reset   &none        &none        &none        &none        &none
                                                              &trans      &trans       &to 1        &trans      &trans
                         >;
                 };
